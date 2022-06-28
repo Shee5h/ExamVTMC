@@ -10,6 +10,6 @@ import lt.vtmc.ExamVTMC.models.Book;
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
 
-	Optional<Book> findByName(String name);
+	Optional<Book> findByBookName(String bookName);
 	
 }

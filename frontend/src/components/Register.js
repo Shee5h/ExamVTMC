@@ -17,6 +17,7 @@ export default function Registration() {
             .then(() => {
 
                 navigate("/")
+                alert("Successfully registered!")
                 console.log("Successfully registered");
             })
     };
@@ -31,7 +32,7 @@ export default function Registration() {
         <>
             <div className="container-fluid login_bg_color">
                 <div className="row justify-content-center">
-                    <div className="col-lg-4 col-md-4 col-sm-8 col-xs-8">
+                    <div className="col-lg-4 col-md-5 col-sm-8 col-xs-8">
                         <div className="form-container" id="form_bg">
                             <div style={{ color: "white", marginBottom: "1rem" }}><strong>Knygų rezervavimo aplikacija</strong></div>
 
@@ -60,7 +61,7 @@ export default function Registration() {
 
                                     <span className="forgot">Jau užsiregistravę? <Link to={"/"}>Prisijunkite</Link></span>
                                 </div>
-                                <button type="submit" className="btn signin">Prisijungti</button>
+                                <button type="submit" className="btn signin">Registruotis</button>
 
                             </form>
                         </div>

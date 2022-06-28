@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import './App.css';
 // import AdminBoard from './components/AdminBoard';
 import Login from './components/Login';
-// import MainPage from './components/MainPage';
+import MainPage from './components/MainPage';
 import Navbar from './components/Navbar';
 import Register from './components/Register';
 import './App.css';
@@ -31,7 +31,7 @@ function App() {
 
       <div>
         <Routes>
-          {/* <Route path="/mainPage" element={<MainPage />} />*/}
+          <Route path="/mainPage" element={<MainPage />} />
           <Route path="/register" element={<Register />} />
           {/* <Route path="/adminBoard" element={<AdminBoard />} />  */}
           <Route path="/" element={<Login />} />

@@ -1,5 +1,5 @@
 import axios from "axios";
-import authHeader from "./auth-header";
+import authHeader from "./authHeader";
 
 const API_URL = "http://localhost:8080/api/books";
 
@@ -16,7 +16,7 @@ const saveBook = ({ bookName, summary, isbn, pageCount, categoryId }) => {
 
 const editBook = ({ bookId, bookName, summary, isbn, pageCount, categoryId }) => {
     return axios
-        .put(API_URL + `/${institutionId}`, {
+        .put(API_URL + `/${bookId}`, {
             bookId,
             bookName,
             summary,
