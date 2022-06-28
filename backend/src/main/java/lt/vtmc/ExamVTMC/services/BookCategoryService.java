@@ -2,12 +2,14 @@ package lt.vtmc.ExamVTMC.services;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import lt.vtmc.ExamVTMC.models.BookCategory;
 import lt.vtmc.ExamVTMC.payload.requests.BookCategoryInsertRequest;
 import lt.vtmc.ExamVTMC.payload.responses.BookCategoryResponse;
 import lt.vtmc.ExamVTMC.repositories.BookCategoryRepository;
 
-
+@Service
 public class BookCategoryService {
 
 	private BookCategoryRepository bookCategoryRepository;
