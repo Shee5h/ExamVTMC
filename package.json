@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "github:fortawesome/react-fontawesome"
+  }
+}
