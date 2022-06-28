@@ -59,10 +59,17 @@ export default function AdminBoard() {
                 <div><strong>Id: </strong>{user.id}</div>
                 <div>{user.username}</div>
                 <div>{user.roles}</div> */}
+                
 
                 <div className="container">
                     <h4 className="af_name container mt-3">Kategorijų ID:</h4>
                     <table className="table table-striped container">
+                        <thead>
+                            <tr>
+                                <th>Category ID</th>
+                                <th>Category name</th>
+                            </tr>
+                        </thead>
                         <tbody>
                             {categories.map((category) => {
                                 return (
@@ -130,6 +137,16 @@ export default function AdminBoard() {
                 </div>
 
                 <table className="table table-striped container">
+                    <thead>
+                        <tr>
+                            <th>Book ID</th>
+                            <th>Book name</th>
+                            <th>Summary</th>
+                            <th>Book ISBN</th>
+                            <th>Book page count</th>
+                            <th>Book category</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         {books.map((book) => {
                             return (
@@ -139,7 +156,7 @@ export default function AdminBoard() {
                                     <td>{book.summary}</td>
                                     <td>{book.isbn}</td>
                                     <td>{book.pageCount}</td>
-                                    <td>{book.categoryId}</td>
+                                    <td>{book.bookCategory.categoryId}</td>
                                     {/* <td>
                                         <DeleteInstitution
                                             id={institution.institutionId} />
