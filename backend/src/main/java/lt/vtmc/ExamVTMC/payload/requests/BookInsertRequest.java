@@ -27,7 +27,7 @@ public class BookInsertRequest {
 	@NotNull
 	private int pageCount;
 	
-    @NotNull
+//    @NotNull
     private Long categoryId;
 	
 }
