@@ -3,6 +3,7 @@ Knygų rezervavimo aplikacija
 
 Aplikacija veikia su MySQL duombaze.
 Norint paleisti aplikaciją reikės paleisti XAMPP servisus.
+Naują duombazę reikės pavadinti 'examvtmc'.
 Pasileidus duombazei ir backendui, reikės įkelti roles į duombazės lentelę 'roles' su SQL komanda:
 
 INSERT INTO roles(name) VALUES('ROLE_USER');
