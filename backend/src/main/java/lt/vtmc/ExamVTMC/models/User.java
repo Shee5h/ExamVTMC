@@ -18,15 +18,14 @@ public class User {
 	private Long id;
 
 	@NotBlank
-//	@NotBlank
 	private String username;
 
-//	@NotBlank
-//	@Email
+	@NotBlank
+	@Email
 	private String email;
 
 	@JsonIgnore
-//	@NotBlank
+	@NotBlank
 	private String password;
 
 	@ManyToMany(fetch = FetchType.LAZY)

@@ -7,7 +7,7 @@ export default function Navbar() {
     return (
         <>
             <div className="topnav">
-                <NavLink to={"/mainPage"}><img src={mainLogo} alt="cibus logo" className="logo_navbar" /></NavLink>
+                <NavLink to={"/mainPage"}><div className="bookName">BookReserve</div></NavLink>
                 <input type="text" placeholder="Search.." className="col-4" />
             </div>
         </>

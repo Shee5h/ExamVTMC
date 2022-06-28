@@ -40,7 +40,7 @@ export default function Login() {
                 <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-5 col-sm-8 col-xs-8">
                         <div className="form-container" id="form_bg">
-                            <div style={{ color: "white", marginBottom: "1rem" }}>Knygų rezervavimo aplikacija</div>
+                            <div style={{ color: "white", marginBottom: "1rem" }}><strong>Knygų rezervavimo aplikacija</strong></div>
 
                             <form className="form-horizontal" onSubmit={handleSubmit(onSubmit)}>
 

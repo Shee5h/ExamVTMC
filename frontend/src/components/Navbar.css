@@ -1,10 +1,24 @@
+.topnav a.active {
+    background-color: #0c269c;
+    color: white;
+}
+
+.topnav a:hover {
+    background-color: #2753C4;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
 .topnav {
     overflow: hidden;
     background-color: var(--mainColor);
 }
 
-.logo_navbar {
+.bookName {
     height: 1.4rem;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
 }
 
 .topnav a {
@@ -17,16 +31,7 @@
     font-size: 17px;
 }
 
-.topnav a:hover {
-    background-color: #e76c00;
-    color: rgb(255, 255, 255);
-    transition: 0.3s;
-}
 
-.topnav a.active {
-    background-color: #ff7700;
-    color: white;
-}
 
 .topnav input[type=text] {
     float: right;

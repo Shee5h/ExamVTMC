@@ -1,19 +1,19 @@
+.login_bg_color {
+    background: var(--mainColor);
+    min-height: 100vh;
+}
 .login_error_message {
     text-align: start;
     font-size: 0.8rem;
 }
 
-.login_bg_color {
-    background: var(--mainColor);
-    min-height: 100vh;
-}
 
-#form_bg{
+#form_bg {
     background: linear-gradient(180deg,
-            rgba(176, 83, 2, 0.4) 33%,
-            rgba(176, 83, 2, 0.4) 30%,
-            rgba(252, 156, 73, 0.3) 70%,
-            rgba(252, 156, 73, 0.3) 67%);
+            rgba(2, 37, 176, 0.4) 33%,
+            rgba(2, 40, 176, 0.4) 30%,
+            rgba(73, 207, 252, 0.3) 70%,
+            rgba(73, 210, 252, 0.3) 67%);
 }
 
 .form-container {
@@ -79,7 +79,7 @@
 
 .form-horizontal .form-control:focus {
     box-shadow: none;
-    border-bottom-color: #EC5F20;
+    border-bottom-color: #2753C4;
 }
 
 .form-horizontal .form-control::placeholder {
@@ -101,13 +101,13 @@
 }
 
 .form-horizontal .forgot a:hover {
-    color: #F28B30;
+    color: var(--mainColor);
     text-decoration: underline;
 }
 
 .form-horizontal .signin {
     color: #fff;
-    background-color: #F28B30;
+    background-color: #309bf2;
     font-size: 1.063rem;
     text-transform: capitalize;
     letter-spacing: 0.125rem;
@@ -123,5 +123,5 @@
     font-weight: 600;
     letter-spacing: 0.313rem;
     color: white;
-    background-color: #e47310;
+    background-color: #4810e4;
 }
