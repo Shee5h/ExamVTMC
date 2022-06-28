@@ -8,7 +8,7 @@ Pasileidus duombazei ir backendui, reikės įkelti roles į duombazės lentelę 
 INSERT INTO roles(name) VALUES('ROLE_USER');
 INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
-Įvykdžius šiuos žingsnius galima paleisti frontend su npm start
+Įvykdžius šiuos žingsnius galima paleisti frontend su npm start (taip pat neužmirškite padarašyti npm install)
 
 Jeigu viskas veiks teisingai, atsiras prisijungimo langas, apačioje galima pasirinkti registruotis ir susikurti naują vartotoją.
 Vartotojo numatytoji rolė yra paprastas vartotojas(ROLE_USER), tad jei norima išbandyti administratoriaus funkcijas, reikės įvykdyti komandą MySQL duombazėje:

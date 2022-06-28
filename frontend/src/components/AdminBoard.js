@@ -59,7 +59,7 @@ export default function AdminBoard() {
                 <div><strong>Id: </strong>{user.id}</div>
                 <div>{user.username}</div>
                 <div>{user.roles}</div> */}
-                
+
 
                 <div className="container">
                     <h4 className="af_name container mt-3">Kategorijų ID:</h4>
@@ -124,7 +124,7 @@ export default function AdminBoard() {
                                             <input {...register("categoryId", { required: true })} type="number" className="form-control p-0" placeholder="Knygos kategoriją" />
                                             {errors?.address?.type === "required" && <p className="login_error_message">Įveskite knygos puslapių skaičių</p>}
 
-                                            {/* TURĖJO BUTI SELECT SU KATEGORIJOMIS */}
+                                            {/*^^^ TURĖJO BUTI SELECT SU KATEGORIJOMIS ^^^*/}
                                         </div>
                                     </div>
                                     <div className="row">
@@ -157,18 +157,6 @@ export default function AdminBoard() {
                                     <td>{book.isbn}</td>
                                     <td>{book.pageCount}</td>
                                     <td>{book.bookCategory.categoryId}</td>
-                                    {/* <td>
-                                        <DeleteInstitution
-                                            id={institution.institutionId} />
-                                        <EditInstitution
-                                            institutionId={institution.institutionId}
-                                            codeName={institution.codeName}
-                                            businessName={institution.businessName}
-                                            address={institution.address} />
-                                    </td> */}
-                                    {/* <div className="col-12">
-                                        urrrr
-                                    </div> */}
                                 </tr>
                             )
                         })}
