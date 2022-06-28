@@ -1,5 +1,7 @@
 package lt.vtmc.ExamVTMC.services;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import lt.vtmc.ExamVTMC.models.Book;
@@ -36,5 +38,9 @@ public class BookService {
                 bookInsertRequest.getCategoryId()
                 );
     }
+	
+	public List<Book> getAllBooks(){
+		return this.bookRepository.findAll();
+	}
 	
 }

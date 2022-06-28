@@ -14,32 +14,32 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import lt.vtmc.ExamVTMC.models.Book;
-import lt.vtmc.ExamVTMC.payload.requests.BookInsertRequest;
-import lt.vtmc.ExamVTMC.payload.responses.BookResponse;
-import lt.vtmc.ExamVTMC.services.BookService;
+import lt.vtmc.ExamVTMC.models.BookCategory;
+import lt.vtmc.ExamVTMC.payload.requests.BookCategoryInsertRequest;
+import lt.vtmc.ExamVTMC.payload.responses.BookCategoryResponse;
+import lt.vtmc.ExamVTMC.services.BookCategoryService;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/api/books")
-public class BookController {
+@RequestMapping("/api/categories")
+public class BookCategoryController {
 
-	private BookService bookService;
+private BookCategoryService bookCategoryService;
 	
-	public BookController (BookService bookService) {
-		this.bookService = bookService;
+	public BookCategoryController (BookCategoryService bookCategoryService) {
+		this.bookCategoryService = bookCategoryService;
 	}
 	
 	@PostMapping
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	@ResponseStatus(HttpStatus.CREATED)
-	public BookResponse addBook(@Valid @RequestBody BookInsertRequest bookRequest) {
-		return this.bookService.saveBook(bookRequest);
+	public BookCategoryResponse addCategory(@Valid @RequestBody BookCategoryInsertRequest bookRequest) {
+		return this.bookCategoryService.saveCategory(bookRequest);
 	}
 	
 	@GetMapping
-	public List<Book> getAllBooks(){
-		return this.bookService.getAllBooks();
+	public List<BookCategory> getCategories(){
+		return this.bookCategoryService.getAllCategories();
 	}
 	
 }
